@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Monoton&display=swap");
 
 * {
   margin: 0;
@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --form: #e5771f;
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -23,13 +23,13 @@ header {
   padding: 1rem;
 }
 
-header h1{
+header h1 {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
 
-main{
+main {
   font-family: "Manrope", system-ui;
   /* padding: 1rem; */
   background-color: #5a3e2b;
@@ -37,7 +37,7 @@ main{
   flex: 1;
 }
 
-form{
+form {
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
@@ -46,15 +46,14 @@ form{
   background-color: #e5771f;
   padding: 1rem;
 }
-form > div{
+form > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-
 @media screen and (min-width: 650px) {
-  form > div{
+  form > div {
     flex-direction: row;
     align-items: center;
     /* justify-content: space-between;  */
@@ -62,34 +61,29 @@ form > div{
     /* gap: 20px; */
     /* border: 1px solid; */
   }
-  
-  .select_amount{
+
+  .select_amount {
     width: 50%;
-    
-  } 
-  
-  .select_amount p{
+  }
+
+  .select_amount p {
     text-wrap: nowrap;
   }
-  
-  
-  .add_trip{
+
+  .add_trip {
     width: 50%;
     /* width: 100%; */
-    
   }
-  
 }
 
-
-form .select_amount{
+form .select_amount {
   display: flex;
   gap: 15px;
-  
-  /* justify-content: ; */
-} 
 
-select{
+  /* justify-content: ; */
+}
+
+select {
   /* width: 50px; */
   padding: 2px 15px;
   outline: none;
@@ -97,12 +91,12 @@ select{
   border-radius: 4px;
 }
 
-.add_trip{
+.add_trip {
   display: flex;
   gap: 10px;
 }
 
-form input{
+form input {
   width: 100%;
   height: 40px;
   border-radius: 4px;
@@ -112,7 +106,7 @@ form input{
   font-size: 18px;
 }
 
-.add_trip button{
+.add_trip button {
   padding: 10px;
   border-radius: 4px;
   border: none;
@@ -120,7 +114,30 @@ form input{
   color: white;
 }
 
-footer{
+.display {
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+}
+
+li button{
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 18px;
+}
+
+footer {
   padding: 1rem;
   background-color: skyblue;
 }

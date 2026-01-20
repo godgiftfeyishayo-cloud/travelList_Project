@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-export default function Form() {
+export default function Form({addNewItem}) {
   const [item, setItem] = useState("");
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState("1");
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log({ amount, item });
+    addNewItem({ amount, item });
   }
 
   return (
